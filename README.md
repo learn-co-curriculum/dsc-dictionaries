@@ -488,7 +488,7 @@ jerry
 
 
 
-Ok so our approach here was to break this problem down into steps.  We first selected the correct TV show.  Then, we moved onto the `creators` attribute.  Finally, we retrieved the correct element from the list of creators.  
+Ok, so our approach here was to break this problem down into steps.  We first selected the correct TV show.  Then, we moved onto the `creators` attribute.  Finally, we retrieved the correct element from the list of creators.  
 
 > As programmers, we tend not to get much smarter over time.  Instead, we develop skills for making problems easier to solve.  Taking the problem in steps, and checking our work at each of these steps is a technique we should continue to lean on.  It's the mark of a skilled developer.
 
