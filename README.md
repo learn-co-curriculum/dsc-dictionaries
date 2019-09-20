@@ -181,7 +181,7 @@ help(dict) #See all of the methods available to dictionary objects
      |  Methods defined here:
      |  
      |  __contains__(self, key, /)
-     |      True if D has a key k, else False.
+     |      True if the dictionary has the specified key, else False.
      |  
      |  __delitem__(self, key, /)
      |      Delete self[key].
@@ -219,9 +219,6 @@ help(dict) #See all of the methods available to dictionary objects
      |  __ne__(self, value, /)
      |      Return self!=value.
      |  
-     |  __new__(*args, **kwargs) from builtins.type
-     |      Create and return a new object.  See help(type) for accurate signature.
-     |  
      |  __repr__(self, /)
      |      Return repr(self).
      |  
@@ -237,11 +234,8 @@ help(dict) #See all of the methods available to dictionary objects
      |  copy(...)
      |      D.copy() -> a shallow copy of D
      |  
-     |  fromkeys(iterable, value=None, /) from builtins.type
-     |      Returns a new dict with keys from iterable and values equal to value.
-     |  
-     |  get(...)
-     |      D.get(k[,d]) -> D[k] if k in D, else d.  d defaults to None.
+     |  get(self, key, default=None, /)
+     |      Return the value for key if key is in the dictionary, else default.
      |  
      |  items(...)
      |      D.items() -> a set-like object providing a view on D's items
@@ -257,8 +251,10 @@ help(dict) #See all of the methods available to dictionary objects
      |      D.popitem() -> (k, v), remove and return some (key, value) pair as a
      |      2-tuple; but raise KeyError if D is empty.
      |  
-     |  setdefault(...)
-     |      D.setdefault(k[,d]) -> D.get(k,d), also set D[k]=d if k not in D
+     |  setdefault(self, key, default=None, /)
+     |      Insert key with a value of default if key is not in the dictionary.
+     |      
+     |      Return the value for key if key is in the dictionary, else default.
      |  
      |  update(...)
      |      D.update([E, ]**F) -> None.  Update D from dict/iterable E and F.
@@ -270,6 +266,18 @@ help(dict) #See all of the methods available to dictionary objects
      |      D.values() -> an object providing a view on D's values
      |  
      |  ----------------------------------------------------------------------
+     |  Class methods defined here:
+     |  
+     |  fromkeys(iterable, value=None, /) from builtins.type
+     |      Create a new dictionary with keys from iterable and values set to value.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
      |  Data and other attributes defined here:
      |  
      |  __hash__ = None
@@ -278,16 +286,9 @@ help(dict) #See all of the methods available to dictionary objects
 
 
 ```python
-friends. #Put the cursor to the right of the dot (.) and press tab to see all of the available methods
+# Add a dot (.) after 'friends' and press tab to see all of the available methods
+friends
 ```
-
-
-      File "<ipython-input-12-44c433242572>", line 1
-        friends. #Put the cursor to the right of the dot (.) and press tab to see all of the available methods
-                                                                                                              ^
-    SyntaxError: invalid syntax
-
-
 
 You should see something like this:
     
