@@ -2,11 +2,12 @@
 # Working With Dictionaries
 
 ## Introduction
-After introducing and working with Lists, you might be wondering if there are other kinds of collections in Python that we should know about. Well, there are! In this lesson, we will introduce **dictionaries**. As we know, lists represent a collection of information that is ordered, like a list of the most watched TV shows.  However, in different situations, we may want our data to represent attributes of an entity, such as the various attributes of a single TV show like its name, genre, starring actors, etc.  For scenarios where the stored objects have no definitive order, but need to be retrieved, a **dictionary** is more natural. Dictionaries are _unordered_ collections of key-value pairs. Rather then specifying a positional index as with lists, we specify a key for a dictionary and are returned with the value associated with that key. For example, in a list, we could retrieve the third item with list_name[2] (remember indexing starts at 0), while in a dictionary, there is no specific third item. Instead, we would have to specify a key such as dict_name['GDPR'] to retrieve the associated value attached to that key. This is similar to traditional dictionaries: you look up a specific word (the key) to find its associated definition (the value).
+After introducing and working with Lists, you might be wondering if there are other kinds of collections in Python that we should know about. Well, there are! In this lesson, we will introduce **dictionaries**. As we know, lists represent a collection of information that is ordered, like a list of the most watched TV shows.  However, in different situations, we may want our data to represent attributes of an entity, such as the various attributes of a single TV show like its name, genre, starring actors, etc.  For such scenarios, a **dictionary** is more natural. Dictionaries are collections of **key-value pairs**. Rather then specifying a positional index as with lists, we specify a key for a dictionary and are returned with the value associated with that key. For example, in a list, we could retrieve the third item with `list_name[2]` (remember indexing starts at 0), while in a dictionary, we would have to specify a key such as `dict_name['key_name']` to retrieve the associated value attached to that key. This is similar to traditional dictionaries: you look up a specific word (the key) to find its associated definition (the value).
 
 ## Objectives
 You will be able to:
-* Understand dictionaries and how to use them
+* Assign values in a dictionary
+* Access keys and values in a dictionary
 
 ## Why Use a Dictionary When We Have Lists?
 
@@ -26,7 +27,7 @@ However, if we use a dictionary, we can neatly organize this information and mak
 terrance = {'name': "Terrance", 'age': 25, 'weight': 72, 'height': 165, 'fav_lang': "Python"}
 ```
 
-This dictionary definitely has more text in it, but we can see a direct association between the *attribute* or **key** and its correlated **value** (i.e. `{"key": "value"}`). This datatype makes it easier to store and access information, such as the attributes of a person or other entity. Note that dictionaries are unordered, so trying to access information using an index number will not work! Accessing information is always done by calling the associated **key**.
+This dictionary definitely has more text in it, but we can see a direct association between the *attribute* or **key** and its correlated **value** (i.e. `{"key": "value"}`). This datatype makes it easier to store and access information, such as the attributes of a person or other entity. Accessing information is always done by calling the associated **key**.
 
 Let's take a deeper look at how dictionaries are built and how they work.
 
@@ -428,7 +429,7 @@ This is a nested data structure.  And it can be confusing to disentangle.  A goo
 
 So `tv_shows` is a list, with each element of the list being a dictionary.  The dictionary has a key of `creators` which itself points to another list. In describing the data structure, we look to the braces and brackets at the beginning.  `[{` means we are starting a list with a dictionary as the first element.  
 
-Ok, now let's start working with this nested data structure.  First let's select the second creator of Seinfeld and set it equal to the variable `jerry`.  We'll retrieve this data in steps.  First, we'll select the correct TV show.
+Ok, now let's start working with this nested data structure.  First, let's select the second creator of Seinfeld and set it equal to the variable `jerry`.  We'll retrieve this data in steps.  First, we'll select the correct TV show.
 
 
 ```python
@@ -495,7 +496,7 @@ Ok, so our approach here was to break this problem down into steps.  We first se
 
 ## Summary
 
-In this section, we saw a new type of collection, the dictionary.  A dictionary is an unordered collection of key-value pairs.  We mark the start and end of a dictionary with curly braces, `{}`, and then follow the pattern of `'key':'value'` for each of the associated attributes, with each attribute separated by a comma: `dictionary = {'key_1':'value_1', 'key_2':'value_2'}`.  
+In this section, we saw a new type of collection, the dictionary.  A dictionary is a collection of key-value pairs.  We mark the start and end of a dictionary with curly braces, `{}`, and then follow the pattern of `'key':'value'` for each of the associated attributes, with each attribute separated by a comma: `dictionary = {'key_1':'value_1', 'key_2':'value_2'}`.  
 
 We retrieve a specific value from a dictionary by using the bracket accessor in combination with the key, so `dictionary['key_2]'` returns `'value_2'`. We can also add a new attribute with the format `dictionary['key_3'] = 'value_3'`.
 
