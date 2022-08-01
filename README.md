@@ -1,11 +1,13 @@
-
 # Working With Dictionaries
 
 ## Introduction
+
 After introducing and working with Lists, you might be wondering if there are other kinds of collections in Python that we should know about. Well, there are! In this lesson, we will introduce **dictionaries**. As we know, lists represent a collection of information that is ordered, like a list of the most watched TV shows.  However, in different situations, we may want our data to represent attributes of an entity, such as the various attributes of a single TV show like its name, genre, starring actors, etc.  For such scenarios, a **dictionary** is more natural. Dictionaries are collections of **key-value pairs**. Rather then specifying a positional index as with lists, we specify a key for a dictionary and are returned with the value associated with that key. For example, in a list, we could retrieve the third item with `list_name[2]` (remember indexing starts at 0), while in a dictionary, we would have to specify a key such as `dict_name['key_name']` to retrieve the associated value attached to that key. This is similar to traditional dictionaries: you look up a specific word (the key) to find its associated definition (the value).
 
 ## Objectives
+
 You will be able to:
+
 * Assign values in a dictionary
 * Access keys and values in a dictionary
 
