@@ -37,7 +37,7 @@ Let's take a deeper look at how dictionaries are built and how they work.
 
 Imagine we want to represent information about the TV show Friends.  Our first step might be to go to Wikipedia to find some information.
 
-![](images/friends.png)
+![](https://curriculum-content.s3.amazonaws.com/data-science/images/friends.png)
 
 As you can see, this information is presented in two columns, with the topics or headings to the left and their specific values to the right.  Now let's see how some of the above information can be represented as a dictionary in Python.
 
@@ -295,7 +295,7 @@ friends
 
 You should see something like this:
     
-<img src="friends_tab_preview.png" width=550>
+<img src="https://curriculum-content.s3.amazonaws.com/data-science/images/friends_tab_preview.png" width=550>
 
 
 ```python
@@ -360,7 +360,7 @@ So in the above line, we referenced the dictionary, then got to the list of crea
 
 Now imagine we want to represent another TV show.
 
-![](images/seinfeld.png)
+![](https://curriculum-content.s3.amazonaws.com/data-science/images/seinfeld.png)
 
 As you can see, Wikipedia provides us data similar to what we have for Friends.
 
